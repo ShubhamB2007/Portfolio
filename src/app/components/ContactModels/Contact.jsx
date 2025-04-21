@@ -139,7 +139,7 @@ const Contact = () => {
             <motion.div 
            variants={ModelVariants} initial='hidden' animate={isInView ? 'visible' : 'hidden'}
             className='lg:absolute lg:w-[60%] w-full lg:left-[40%] left-0 lg:h-full h-[400px] rounded-xl border-gray-300 bg-orange-300 flex justify-center items-center z-0 lg:mt-0 mt-6'>
-                 {isInView && <ContactModel />}
+                 {isInView ? <ContactModel /> : <p className='text-2xl font-bold'>Loading...</p>}
              </motion.div>
         </div>
 
