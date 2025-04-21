@@ -33,7 +33,7 @@ const Navbar = () => {
     <motion.div 
     variants={NavVariants} initial='hidden' animate='visible'
     className='lg:w-[80%] w-[88.2%] h-24 top-0 absolute z-50 flex items-center justify-between'>
-          <p className='text-[#d9ebfe] font-bold font-custom cursor-pointer'>Shubham | BBM</p>
+          <p className='text-[#d9ebfe] font-bold font-custom cursor-pointer'>Shubham | Portfolio</p>
           <button onClick={()=>scrollToSection("Contact")} className='w-36 h-10 rounded-xl bg-[#f1f1f1] lg:mr-5 text-black font-semibold hover:bg-[#1d1c21] hover:duration-200 cursor-pointer hover:text-white'>Contact Me</button>
           <div className='w-[60%] h-full absolute left-[20%] flex justify-center items-center gap-8 text-[#d9ebfe] lg:visible invisible'>
              {NavLinks.map((item,index)=>(
