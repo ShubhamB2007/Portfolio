@@ -48,11 +48,9 @@ const Contact = () => {
    const formRef = useRef(null)
 
   const icons = [
-    {icon:<FaGithub />,link:'https://github.com/ShubhamB2007' },
-    {icon:<FaInstagram />,link:'https://www.instagram.com/coldeditz_17?igsh=NTBxcWtieHB0ZnZp' },
-    {icon:<FaLinkedin />,link:'https://www.linkedin.com/in/shubham-budhakar-8a52382bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
-    
-    
+    {icon:<FaGithub />, link:'https://github.com/ShubhamB2007' },
+    {icon:<FaInstagram />, link:'https://www.instagram.com/coldeditz_17?igsh=NTBxcWtieHB0ZnZp' },
+    {icon:<FaLinkedin />, link:'https://www.linkedin.com/in/shubham-budhakar-8a52382bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },    
   ]
 
   const handleChange = (e)=>{
@@ -149,8 +147,8 @@ const Contact = () => {
         variants={FooterVariants} initial='hidden' animate={isInView ? 'visible' : 'hidden'}
         className='w-full h-16 lg:bottom-0 mt-96 lg:mt-0 flex justify-center items-center gap-5'>
            {icons.map((item,index)=>(
-              <Link to={`${item.link}`}>
-                  <div key={index} className='w-12 h-12 bg-[#0e0e10] rounded-xl cursor-pointer hover:duration-200 hover:bg-[#1c1d1f] flex justify-center items-center'>
+              <Link href={item.link} key={index} target="_blank" rel="noopener noreferrer">
+                  <div className='w-12 h-12 bg-[#0e0e10] rounded-xl cursor-pointer hover:duration-200 hover:bg-[#1c1d1f] flex justify-center items-center'>
                   {item.icon}
                 </div>
             </Link>
