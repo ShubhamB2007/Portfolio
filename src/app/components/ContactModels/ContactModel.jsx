@@ -20,7 +20,7 @@ const ContactModel = () => {
       <directionalLight intensity={4} position={[10, 10, 5]} />
 
        <OrbitControls maxDistance={20} minDistance={5} minPolarAngle={Math.PI / 5} maxPolarAngle={Math.PI / 2} autoRotate enablePan={false} enableZoom={false}/>
-         <group scale={isMobile ? 35 : 35}>
+         <group scale={isMobile ? 15 : 20}>
            <LandlinePhone/>
          </group>
         </Suspense>
