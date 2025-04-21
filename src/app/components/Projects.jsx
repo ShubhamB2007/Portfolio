@@ -44,7 +44,7 @@ const Projects = () => {
              className='lg:w-[95%] w-full h-[50%] flex flex-col gap-1'>
                  <div className='mt-2 cursor-pointer group'>
                   <Image alt='image' src='/gifs/ecom.gif' width={400} height={100} className='hover:brightness-50 hover:duration-300 lg:w-[95%] w-full bg-[#151515] h-[100%] rounded-xl shadow-[0_5px_15px_rgba(0,_0,_0,_0.7)]'/>
-                  <button className="absolute inset-0 m-auto w-fit h-fit px-6 py-2 lg:mt-24 mt-16 lg:ml-[165px] ml-[130px] bg-[#f1f1f1] text-black font-semibold rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 cursor-pointer">
+                  <button className="absolute inset-0 m-auto w-fit h-fit px-6 py-2 lg:mt-24 mt-16 lg:ml-[165px] ml-[100px] bg-[#f1f1f1] text-black font-semibold rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 cursor-pointer">
                      <a href="https://ecommerce-frontend-qoyp.onrender.com" className='link link-underline'>See Project</a>
                      </button>
                  </div>
@@ -58,7 +58,7 @@ const Projects = () => {
            className='lg:w-[95%] w-full h-[50%] flex flex-col gap-1'>
               <div className='mt-0 cursor-pointer group'>
                 <Image alt='image' src='/gifs/task.gif' width={400} height={100} className='hover:brightness-50 hover:duration-300 lg:w-[95%] w-full bg-[#151515] h-[100%] rounded-xl shadow-[0_5px_15px_rgba(0,_0,_0,_0.7)]'/>
-                <button className="absolute inset-0 m-auto w-fit h-fit px-6 py-2 kg:mb-40 mb-32 lg:ml-[165px] ml-[130px] bg-[#f1f1f1] text-black font-semibold rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 cursor-pointer">
+                <button className="absolute inset-0 m-auto w-fit h-fit px-6 py-2 lg:mb-40 mb-32 lg:ml-[165px] ml-[100px] bg-[#f1f1f1] text-black font-semibold rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 cursor-pointer">
                  <a href="https://task-frontend-1vda.onrender.com" className='link link-underline'>See Project</a>
                 </button>
               </div>
