@@ -12,15 +12,15 @@ const ContactModel = () => {
     <div className="w-full h-full min-h-[300px]">
       
      <Canvas
-    dpr={[1, 1.5]} 
-    gl={{ preserveDrawingBuffer: false }} 
-    amera={{ position: [0, 15, 15], fov: 45 }}> 
+        dpr={[1, 1.5]} 
+        gl={{ preserveDrawingBuffer: false }} 
+        camera={{ position: [0, 17, 15], fov: 45 }}> 
        <Suspense fallback={null}>
       <ambientLight intensity={5} />
       <directionalLight intensity={4} position={[10, 10, 5]} />
 
        <OrbitControls maxDistance={20} minDistance={5} minPolarAngle={Math.PI / 5} maxPolarAngle={Math.PI / 2} autoRotate enablePan={false} enableZoom={false}/>
-         <group scale={isMobile ? 15 : 20}>
+         <group scale={isMobile ? 15 : 18}>
            <LandlinePhone/>
          </group>
         </Suspense>
