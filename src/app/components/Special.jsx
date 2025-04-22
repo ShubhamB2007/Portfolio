@@ -31,7 +31,7 @@ const Special = () => {
         scaleY: 1,
         scrollTrigger: {
           trigger: segment,
-          start: 'top 90%',
+          start: 'top 50%',
           end: 'bottom 60%',
           scrub: true,
         },
