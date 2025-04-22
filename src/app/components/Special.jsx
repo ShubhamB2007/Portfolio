@@ -32,10 +32,10 @@ const Special = () => {
         scrollTrigger: {
           trigger: segment,
           start: 'top 50%',
-          end: 'bottom 60%',
+          end: 'bottom 100px',
           scrub: true,
         },
-        duration: 1,
+        duration: 3,
         ease: 'power2.out',
       });
     });
