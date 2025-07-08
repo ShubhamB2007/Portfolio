@@ -17,11 +17,11 @@ const AboutVariants = {
 const About = () => {
 
   const ref = useRef(null);
-  const isInView = useInView(ref, { triggerOnce: true, threshold: 0.2 }); 
+  const isInView = useInView(ref, { once: true, threshold: 0.2 }); 
 
 
   return (
-    <div ref={ref} id='About' className='w-full lg:h-[540px] h-[490px] bg-[#f6f6f6] absolute lg:top-[3700px] top-[4700px] flex flex-col items-center pt-12 gap-8'>
+    <div ref={ref} id='About' className='w-full lg:h-[540px] h-[490px] bg-[#f6f6f6] absolute lg:top-[4100px] top-[6200px] flex flex-col items-center pt-12 gap-8'>
        <p className='font-bold font-[SFTSchriftedSansTRIAL-Medium] lg:text-5xl text-2xl'>About Me 🚀</p>
        <motion.div 
        variants={AboutVariants} initial='hidden' animate={isInView ? 'visible' : 'hidden'}

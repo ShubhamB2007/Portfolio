@@ -7,6 +7,7 @@ import { Model } from './Lost_programmer'
 import { Group } from 'three';
 import { useMediaQuery } from 'react-responsive';
 import {motion} from 'framer-motion'
+import Link from 'next/link';
 
 const TextVariants = {
   hidden:{
@@ -50,7 +51,7 @@ const Hero = () => {
 
       <motion.div 
       variants={TextVariants} initial='hidden' animate='visible'
-      className='absolute top-28 lg:top-52 lg:left-[152px] left-6 z-30 font-[SFTSchriftedSansTRIAL-Medium]'>
+      className='absolute top-28 lg:top-52 lg:left-[102px] left-6 z-30 font-[SFTSchriftedSansTRIAL-Medium]'>
          <div className='flex flex-col lg:gap-4 gap-2 text-white font-bold lg:text-6xl text-4xl'>
              <p>Building Digital</p>
              <p>Experience That</p>
@@ -58,10 +59,12 @@ const Hero = () => {
          </div>
          <p className='ml-1 lg:mt-6 mt-3 text-sm lg:text-base lg:w-[500px] w-84 text-[#d9ebfe]'>Hi, I’m Shubham, a passionate full stack developer based in India, <br /> building user-friendly apps with smart AI integration.</p>
          <button ref={btnRef} className='relative overflow-hidden bg-[#f1f1f1] text-[#4a2008] font-semibold w-56 h-12 rounded-full ml-1 mt-8 cursor-pointer group flex items-center justify-center shadow-[0_0_15px_rgba(255,184,108,0.25)]'>
-         <span className="z-20 flex items-center gap-2 justify-center pointer-events-none">
+            <Link href='#Productivity'>
+            <span className="z-20 flex items-center gap-2 justify-center pointer-events-none">
               SEE MY WORK
               <span>→</span>
             </span>
+            </Link>
             <span ref={glowRef} className="absolute top-0 left-0 w-24 h-full rounded-full opacity-80 bg-[radial-gradient(circle,_rgbargba(255,255,247,1)_40%,_rgba(255,209,138,0.2)_100%,_transparent_40%)] shadow-[0_0_55px_rgba(252,211,77,1)] pointer-events-none transition-all duration-150"></span>
          </button>
       </motion.div>  

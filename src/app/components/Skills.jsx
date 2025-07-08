@@ -18,19 +18,19 @@ const SkillsVariants = {
 const Skills = () => {
 
    const Skills = [
-    {name:"React Developer", logo:'/logos/react.png'},
-    {name:"MERN Stack Developer", logo:'/logos/node.png'},
-    {name:"AI Integrator", logo:'/logos/AI.png'},
-    {name:"Firebase & MongoDB", logo:'/logos/MongoDB.png'},
-    {name:"UI Developer", logo:'/logos/UI.png'}, 
+    {name:"Next.Js Developer", logo:'https://res.cloudinary.com/di2dodral/image/upload/q_auto:best,f_auto,c_fill,dpr_auto,w_700,h_650/v1751969385/next_phvjwv.png'},
+    {name:"MERN Stack Developer", logo:'https://res.cloudinary.com/di2dodral/image/upload/q_auto:best,f_auto,c_fill,dpr_auto,w_700,h_650/v1751969385/react_jxrywc.png'},
+    {name:"AI Integrator", logo:'https://res.cloudinary.com/di2dodral/image/upload/q_auto:best,f_auto,c_fill,dpr_auto,w_700,h_650/v1751969383/AI_kg78uo.png'},
+    {name:"Firebase & MongoDB", logo:'https://res.cloudinary.com/di2dodral/image/upload/q_auto:best,f_auto,c_fill,dpr_auto,w_700,h_650/v1751969384/MongoDB_je3d6r.png'},
+    {name:"TypeScript", logo:'https://res.cloudinary.com/di2dodral/image/upload/q_auto:best,f_auto,c_fill,dpr_auto,w_700,h_650/v1751969383/typescript_mjc84w.png'}, 
    ]
 
    const ref = useRef(null);
-   const isInView = useInView(ref, { triggerOnce: true, threshold: 0.2 }); 
+   const isInView = useInView(ref, { once: true, threshold: 0.2 }); 
    
 
   return (  
-    <div ref={ref} id='Skills' className='bg-[#000000] w-full lg:min-h-screen min-h-[1500px] relative lg:top-[1480px] top-[1760px] text-white flex justify-center'>
+    <div ref={ref} id='Skills' className='bg-[#000000] w-full lg:min-h-screen min-h-[1500px] relative lg:top-[1940px] top-[3300px] text-white flex justify-center'>
         <p className='lg:text-5xl text-xl font-bold font-[SFTSchriftedSansTRIAL-Medium] absolute top-12'>Skills Bring To The Table ✍</p>
         <div className='w-[80%] lg:h-[450px] lg:mt-36 flex lg:flex-row flex-col justify-center items-center gap-4'>
             {Skills.map((item,index)=>(

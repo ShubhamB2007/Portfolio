@@ -101,12 +101,12 @@ const Contact = () => {
     }, []);
 
     const ref = useRef(null);
-    const isInView = useInView(ref, { triggerOnce: true, threshold: 0.2 });
+    const isInView = useInView(ref, { once: true, threshold: 0.2 });
 
 
 
   return (
-    <div ref={ref} id='Contact' className='bg-black w-full lg:h-full h-[1150px] absolute lg:top-[4240px] top-[5190px] text-white flex flex-col items-center pt-12 gap-8'>
+    <div ref={ref} id='Contact' className='bg-black w-full lg:h-full h-[1150px] absolute lg:top-[4640px] top-[6690px] text-white flex flex-col items-center pt-12 gap-8'>
         <p className='font-bold font-[SFTSchriftedSansTRIAL-Medium] lg:text-5xl text-2xl'>Get In Touch 📱</p>
         <div className='w-[80%] lg:h-[530px] h-[500px] flex lg:flex-row flex-col relative gap-4'>
         <motion.div 

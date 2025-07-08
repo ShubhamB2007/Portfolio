@@ -42,19 +42,19 @@ const Special = () => {
   }, []); 
 
   const ref = useRef(null);
-  const isInView = useInView(ref, { triggerOnce: true, threshold: 0.2 }); 
+  const isInView = useInView(ref, { once: true, threshold: 0.2 }); 
 
     const Features = [
-        { name: 'Fully Responsive Design', desc1: 'Mobile-first and seamless layout across mobile & desktop devices', desc2: "Smooth user experience especially on mobile device", color: 'bg-sky-600', logo:'/MainLogos/responsive.png', image:'/SideLogos/responsive.png' },
-        { name: 'Google Authentication', desc1: 'Secure login/signup using MongoDB database', desc2: "Easy authorization using Google Cloud Platform", color: 'bg-green-500', logo:'/MainLogos/auth.png', image:'/SideLogos/auth.png' },
-        { name: 'Framer Motion', desc1: 'Smooth animations and transitions that improve UX', desc2: "User friendly animations on user hover", color: 'bg-pink-500', logo:'/MainLogos/motion.png', image:'/SideLogos/motion.png' },
-        { name: 'Next.js Library', desc1: 'Optimized performance with Next 13', desc2: "Lazy loading and Image optimization", color: 'bg-yellow-500', logo:'/MainLogos/next.png', image:'/SideLogos/next.png' },
-        { name: 'AI Integration', desc1: 'Integrated AI with free API available', desc2: "Easy user experience with help of AI", color: 'bg-purple-600', logo:'/MainLogos/AI.png', image:'/SideLogos/AI.png' },
-        { name: 'Search & Cart functionality', desc1: 'User can find items with Search Functionality', desc2: "Items can be added to cart in one click with checkout option", color: 'bg-red-500', logo:'/MainLogos/cart.png', image:'/SideLogos/cart.png' },
+        { name: 'Fully Responsive Design', desc1: 'Mobile-first and seamless layout across mobile & desktop devices', desc2: "Smooth user experience especially on mobile device", color: 'bg-sky-600', logo:'https://res.cloudinary.com/di2dodral/image/upload/v1751969452/responsive_tfcptc.png', image:'https://res.cloudinary.com/di2dodral/image/upload/v1751969476/responsive_rbhokw.png' },
+        { name: 'Google Authentication', desc1: 'Secure login/signup using MongoDB database', desc2: "Easy authorization using Google Cloud Platform", color: 'bg-green-500', logo:'https://res.cloudinary.com/di2dodral/image/upload/v1751969453/auth_tncx4l.png', image:'https://res.cloudinary.com/di2dodral/image/upload/v1751969477/auth_pgvyyl.png' },
+        { name: 'Framer Motion', desc1: 'Smooth animations and transitions that improve UX', desc2: "User friendly animations on user hover", color: 'bg-pink-500', logo:'https://res.cloudinary.com/di2dodral/image/upload/v1751969455/motion_qqzajk.png', image:'https://res.cloudinary.com/di2dodral/image/upload/v1751969480/motion_kwufvx.png' },
+        { name: 'Next.js Library', desc1: 'Optimized performance with Next 13', desc2: "Lazy loading and Image optimization", color: 'bg-yellow-500', logo:'https://res.cloudinary.com/di2dodral/image/upload/v1751969456/next_jiuq6p.png', image:'https://res.cloudinary.com/di2dodral/image/upload/v1751969480/next_xul8qg.png' },
+        { name: 'AI Integration', desc1: 'Integrated AI with free API available', desc2: "Easy user experience with help of AI", color: 'bg-purple-600', logo:'https://res.cloudinary.com/di2dodral/image/upload/v1751969452/AI_s6jlid.png', image:'https://res.cloudinary.com/di2dodral/image/upload/v1751969476/AI_arvzf9.png' },
+        { name: 'Search & Cart functionality', desc1: 'User can find items with Search Functionality', desc2: "Items can be added to cart in one click with checkout option", color: 'bg-red-500', logo:'https://res.cloudinary.com/di2dodral/image/upload/v1751969454/cart_yxhbjc.png', image:'https://res.cloudinary.com/di2dodral/image/upload/v1751969479/cart_o9k7mu.png' },
       ];
 
   return (
-    <div ref={ref} id='Special_Features' className='lg:w-full w-full lg:min-h-screen absolute lg:top-[2210px] top-[3260px] bg-black text-white flex justify-center pb-16'>
+    <div ref={ref} id='Special_Features' className='lg:w-full w-full lg:min-h-screen absolute lg:top-[2630px] top-[4800px] bg-black text-white flex justify-center pb-16'>
         <div className='lg:w-[80%] w-full relative min-h-full flex flex-col items-center gap-6'>
            <p className='lg:text-5xl text-xl font-bold font-[SFTSchriftedSansTRIAL-Medium] pb-8'>Special Features 💻</p>
           
@@ -74,11 +74,11 @@ const Special = () => {
                 <motion.div 
                 variants={SkillsVariants} initial='hidden' animate={isInView ? 'visible' : 'hidden'} custom={index}
                 className='w-[75%] h-[90%] rounded-xl flex justify-center items-center lg:visible invisible'>
-                <Image alt='image' src={item.image} width={160} height={160}/>
+                <Image priority alt='image' src={item.image} width={160} height={160}/>
                 </motion.div>  
                 <div className='w-24 h-24 bg-[#0e0e10] relative z-20 lg:left-[11.2%] left-0 lg:mr-10 mr-32 flex justify-center items-center rounded-full'>
                 <div className={`w-16 h-16 rounded-full ${item.color} flex justify-center items-center`}>
-                  <Image alt='image' width={32} height={32} src={item.logo}/>
+                  <Image priority alt='image' width={32} height={32} src={item.logo}/>
                 </div>
                 </div>
              </div>    
