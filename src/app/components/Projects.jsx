@@ -93,7 +93,7 @@ const Projects = () => {
         <motion.div variants={ProjectVariants} initial="hidden" animate={isInView ? 'visible' : 'hidden'} className="bg-white rounded-xl overflow-hidden shadow-[0_8px_15px_rgba(0,0,0,0.15)]">
           <div className="relative group">
             <Image src="/gifs/ecom.gif" width={400} height={200} alt="Ecommerce" priority className="object-cover w-full h-48 group-hover:brightness-50 transition duration-300" />
-            <Link href="https://barber-shop-snowy-ten.vercel.app/" target='_blank'>
+            <Link href="https://ftbl-store.vercel.app/" target='_blank'>
               <button className="absolute inset-0 m-auto w-fit h-fit px-6 py-2 bg-white text-black font-semibold rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 See Project
               </button>
